@@ -18,8 +18,8 @@ import org.junit.Test;
  * your class and figure out why your implementation is not 
  * passing that test.
  *
- * @author  Crosbie
- * @version 0.1alpha
+ * @author  Kazeem Azeez
+ * @version 09/16/2019
  */
 public class BookTest
 {
@@ -33,6 +33,7 @@ public class BookTest
      */
     public BookTest()
     {
+        
     }
 
     /**

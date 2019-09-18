@@ -58,7 +58,7 @@ class Book
     }
     
     /**
-     * 
+     * Sets the reference number for this book 
      */
     public void setRefNumber(String ref)
     {
@@ -71,7 +71,7 @@ class Book
     }
     
     /**
-     * 
+     * Accessor method to return the reference number 
      */
     public String getRefNumber()
     {
@@ -79,7 +79,7 @@ class Book
     }
     
     /**
-     * 
+     * Prints the title of the book 
      */
     public void printTitle()
     {
@@ -87,7 +87,7 @@ class Book
     }
     
     /**
-     * 
+     * Prints the name of the author 
      */
     public void printAuthor()
     {
@@ -113,7 +113,7 @@ class Book
     }
     
     /**
-     * 
+     * Accesor method to return the number of times the book has been borrowed
      */
     
     public int getBorrowed()
@@ -122,7 +122,7 @@ class Book
     }
     
     /**
-     * 
+     * Borrows the book. counts the number of times the book has been borrowed
      */
     
     public void borrow()
@@ -131,7 +131,7 @@ class Book
     }
     
     /**
-     * 
+     * return the course text 
      */
     public boolean isCourseText()
     {

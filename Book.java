@@ -13,19 +13,20 @@ class Book
     private String title;
     private int pages; 
     private String refNumber;
-    private boolean t; 
+    private int borrowed;
+    private boolean courseText;
     
-
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int pageNum, boolean idk)
+    public Book(String bookAuthor, String bookTitle, int pageNum)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = pageNum; 
-        t = idk;
+        refNumber = "";
+        
     }
     
     /**
@@ -57,12 +58,85 @@ class Book
     }
     
     /**
+     * 
+     */
+    public void setRefNumber(String ref)
+    {
+        if(ref.length() >= 3){
+            refNumber = ref;
+        }
+        else{
+            System.out.println("Error! The reference number must be at least 3 characters long.");
+        }   
+    }
+    
+    /**
+     * 
+     */
+    public String getRefNumber()
+    {
+     return refNumber;    
+    }
+    
+    /**
+     * 
+     */
+    public void printTitle()
+    {
+       System.out.println("Title: " + title); 
+    }
+    
+    /**
+     * 
+     */
+    public void printAuthor()
+    {
+       System.out.println("Author: " + author);
+    }
+    
+    /**
      * Method will print out the book's details to the terminal 
      */
     public void printDetails(String bookTitle , String bookAuthor)
     {
         //printing the book details 
         System.out.println("Title: "+ bookTitle + ", Author: "+ bookAuthor + ". Pages" + pages);
+        String refNumberString;
+        if(refNumber.length() > 0){
+            refNumberString = refNumber; 
+        }
+        else{
+            refNumberString = "ZZZ"; 
+        }
+        System.out.println("Reference number: " + refNumberString);
+        System.out.println("Borrowed: " + borrowed);
+    }
+    
+    /**
+     * 
+     */
+    
+    public int getBorrowed()
+    {
+        return borrowed; 
+    }
+    
+    /**
+     * 
+     */
+    
+    public void borrow()
+    {
+        borrowed++;
+    }
+    
+    /**
+     * 
+     */
+    public boolean isCourseText()
+    {
+     return courseText;   
+        
     }
     
 

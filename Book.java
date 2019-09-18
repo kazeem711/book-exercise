@@ -100,7 +100,7 @@ class Book
     public void printDetails(String bookTitle , String bookAuthor)
     {
         //printing the book details 
-        System.out.println("Title: "+ bookTitle + ", Author: "+ bookAuthor + ". Pages" + pages);
+        System.out.println("Title: "+ bookTitle + ", Author: "+ bookAuthor + ", Pages: " + pages);
         String refNumberString;
         if(refNumber.length() > 0){
             refNumberString = refNumber; 
